@@ -4,6 +4,8 @@ A minimal bus specification that lets coding agents launch and switch local infe
 
 Bus spec version: **0.1** · Data currency: **as of 2026-10-11**.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Local inference is no longer "run a model, chat in a REPL" — agent CLIs are the customer, and a real workstation hosts several local engines side by side. But each engine exposes its own launch flags, health semantics and defaults, so every agent integration hard-codes one vendor's interface. Switching engines (or adding a fallback engine for quota/network outages) means editing integration code. The missing piece is not another engine; it is a thin, boring contract *between* agents and engines.
